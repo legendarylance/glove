@@ -8,6 +8,6 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
-    <access origin="http://zhakhan.com/*" />
-	<allow-intent href="http://zhakhan.com/*" />
+    <access origin="*" />
+    <allow-intent href="*" />
 </widget>

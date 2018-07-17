@@ -12,6 +12,7 @@ Vector representation is a leading technique for measuring syntactic and semanti
 
 ### GloVe
 GloVe is an unsupervised learning algorithm for obtaining vector representations for words. It considers both global and local context of words for vectorization. It uses co-occurrence matrix to find global context and skip-gram model for local context. It learns vector representations for words so that the dot product for a pair of words is proportional to their co-occurrence count. GloVe model is an open source and collections of pre-trained word vectors are available online (Pennington 2013).
+
 To measure similarity distances between words, k-nearest neighbors algorithm with cosine distance metric was used.
 
 ### Text Corpus
@@ -37,7 +38,9 @@ For more information, please see <a href="Word2vec based natural language simpli
 
 ## Application
 According to the study by Sökmen, semantic mapping is a powerful technique used to identify, recall and understand the meaning of words (Sökmen 1997). Today, this technique is mainly used in schools to help students with disabilities to enrich their vocabulary. Current ways of creating these maps are brainstorming and manual search for synonyms.
+
 A tool (GloVeNLS) developed for this project performed these tasks automatically. It found both synonyms and conceptually similar words. For example, for a word “Car”, GloVeNLS returned synonym “Vehicle”, a type of car - “Truck” and conceptually similar word “Driver”. Furthermore, semantic mapping aids semantic memorization, which is a form of general knowledge that people accumulate throughout their lives. Semantic form of memory has been proven to be more robust because meanings are linked to ideas and concepts.
+
 Due to the size constraints and slow querying speed of KNN model, online querying proved to be inefficient for a mobile application. Instead, 10,000 most common English words were pre-queried, and results were uploaded to a MySQL database. Next, a web application was developed using HTML, CSS and JavaScript languages. Queries were processed using AJAX in real time. Next, designed web application was converted into a mobile application using PhoneGap development framework (see image 1 for a screenshot).
 
 Online demo of the application is available here:<br />
